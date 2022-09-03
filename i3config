@@ -326,8 +326,10 @@ default_floating_border none
 bindsym --release $mod+Return exec --no-startup-id "cd ~/.config/rofi/ && ./powermenu.sh"
 for_window [class=".*"] border pixel 0
 for_window [urgent="latest"] focus
+focus_follows_mouse yes 
 title_align center
-gaps inner 6 
+gaps inner 6
+no_focus [all] 
 ###################################Autostarting##############################################
 exec --no-startup-id /usr/lib/xfce-polkit/xfce-polkit
 exec --no-startup-id picom -b -c --config ~/.config/picom/picom.conf --backend xrender
