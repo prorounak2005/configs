@@ -321,20 +321,18 @@ mode "$mode_gaps_left" {
 }
 
 ###############################My settings###################################################
-default_border pixel 3
-default_floating_border none
 bindsym --release $mod+Return exec --no-startup-id "cd ~/.config/rofi/ && ./powermenu.sh"
 for_window [class=".*"] border pixel 0
 for_window [urgent="latest"] focus
-focus_follows_mouse yes 
+for_window [urgent="oldest"] focus
 title_align center
 gaps inner 6
-no_focus [all] 
+focus_on_window_activation focus
+floating_modifier $mod+Shift
 ###################################Autostarting##############################################
 exec --no-startup-id /usr/lib/xfce-polkit/xfce-polkit
 exec --no-startup-id picom -b -c --config ~/.config/picom/picom.conf --backend xrender
 exec --no-startup-id nvidia-settings --load-config-only
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always --no-startup-id nitrogen --restore
-exec --no-startup-id pa-applet --disable-notifications
-exec --no-startup-id parcellite
+exec --no-startup-id parcellite -n
