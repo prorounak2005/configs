@@ -10,6 +10,8 @@ automake
 base
 bison
 cmatrix
+cups
+cups-pdf
 debuginfod
 delve
 dnsmasq
@@ -24,7 +26,6 @@ flatpak
 flex
 gamemode
 gcc
-geany
 gist
 git
 gnome-themes-extra
@@ -38,6 +39,7 @@ gvfs
 hexchat
 htop
 i3-gaps
+i3-swallow-git
 i3blocks
 i3lock
 i3status
@@ -60,6 +62,7 @@ lib32-nvidia-utils
 lib32-ocl-icd
 lib32-openal
 lib32-v4l-utils
+libreoffice-still
 libtool
 linux-firmware
 linux-zen
@@ -76,6 +79,7 @@ neofetch
 networkmanager
 nitrogen
 noto-fonts-emoji
+nss-mdns
 ntfs-3g
 nuclear-player-bin
 nvidia-dkms
@@ -98,6 +102,7 @@ qemu-desktop
 qemu-emulators-full
 qt5ct
 qt6-base
+ranger
 reflector
 rmlint
 rofi
@@ -126,6 +131,8 @@ virtualbox-guest-iso
 virtualbox-host-dkms
 vkd3d-proton-bin
 vlc
+volctl
+w3m
 wget
 which
 wimlib
@@ -140,7 +147,6 @@ xdg-user-dirs
 xf86-video-qxl
 xf86-video-vesa
 xfce-polkit-git
-xfce4-terminal
 xorg-bdftopcf
 xorg-docs
 xorg-font-util
