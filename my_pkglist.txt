@@ -1,6 +1,7 @@
 #To install the packages from this list run "pacman -S --needed - < pkglist.txt" without quotes.
 #For more info see - https://wiki.archlinux.org/title/Pacman/Tips_and_tricks#List_of_installed_packages 
 #and also see - https://wiki.archlinux.org/title/Pacman/Tips_and_tricks#Install_packages_from_a_list
+
 adwaita-qt5
 alacritty
 arc-gtk-theme
@@ -8,18 +9,24 @@ arc-icon-theme
 autoconf
 automake
 base
+bashtop
 bison
+breeze
+breeze-gtk
 cmatrix
+copyq
 cups
 cups-pdf
 debuginfod
 delve
 dnsmasq
+dragon-drop
 dxvk-bin
 efibootmgr
 elfutils
 fakeroot
 feh
+ffmpegthumbnailer
 firefox
 flameshot
 flatpak
@@ -36,7 +43,6 @@ gtk2
 gtk4
 gucharmap
 gvfs
-hexchat
 htop
 i3-gaps
 i3-swallow-git
@@ -48,6 +54,7 @@ imgur.sh
 intel-ucode
 iptables-nft
 keepassxc
+kvantum
 lib32-gamemode
 lib32-giflib
 lib32-gst-plugins-base-libs
@@ -78,6 +85,8 @@ nano
 neofetch
 networkmanager
 nitrogen
+nnn
+notepadqq
 noto-fonts-emoji
 nss-mdns
 ntfs-3g
@@ -92,12 +101,14 @@ pa-applet-git
 pacman-contrib
 papirus-icon-theme
 parcellite
+pasystray
 patch
 pavucontrol
 picom
 pkgconf
 polybar
 pulseaudio
+qbittorrent
 qemu-desktop
 qemu-emulators-full
 qt5ct
@@ -118,6 +129,7 @@ texlive-fontsextra
 thunar
 thunderbird
 timeshift
+trash-cli
 ttf-font-awesome
 ttf-liberation
 ttf-linux-libertine
@@ -126,9 +138,6 @@ unzip
 vi
 vim
 virt-manager
-virtualbox
-virtualbox-guest-iso
-virtualbox-host-dkms
 vkd3d-proton-bin
 vlc
 volctl
