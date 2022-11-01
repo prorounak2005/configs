@@ -110,7 +110,7 @@ window:
 
 # Font configuration
 font:
-  size: 14 
+  size: 17 
   # Normal (roman) font face
   #normal:
     # Font family
