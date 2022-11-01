@@ -342,6 +342,9 @@ gaps inner 6
 focus_on_window_activation focus
 focus_follows_mouse yes
 ###################################Autostarting##############################################
+exec_always --no-startup-id /usr/lib/xfce-polkit/xfce-polkit
+exec_always --no-startup-id parcellite
+exec_always --no-startup-id pasystray
 exec_always --no-startup-id nvidia-settings --load-config-only
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always --no-startup-id picom -b -c --config ~/.config/picom/picom.conf --backend xrender &
