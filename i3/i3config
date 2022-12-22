@@ -14,7 +14,7 @@ set $mod Mod4
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 #font pango:monospace 8
-font pango:monospace 11
+font pango:monospace 12
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -29,7 +29,7 @@ exec --no-startup-id dex --autostart --environment i3
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+#exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
@@ -335,19 +335,23 @@ client.background       #ffffff
 
 ###############################My settings###################################################
 bindsym --release $mod+Return exec --no-startup-id "~/.config/rofi/powermenu/type-2/powermenu.sh"
-for_window [class=".*"] border pixel 0
 title_align center
-gaps inner 6
 focus_on_window_activation focus
 focus_follows_mouse yes
+default_border pixel 0
+default_floating_border pixel 0
+gaps outer 5
+gaps inner 4
+gaps top 48
 ###################################Autostarting##############################################
-exec --no-startup-id /usr/lib/xfce-polkit/xfce-polkit
+exec        --no-startup-id /usr/lib/xfce-polkit/xfce-polkit
 exec_always --no-startup-id parcellite
-exec --no-startup-id pasystray
+exec        --no-startup-id pasystray
 exec_always --no-startup-id nvidia-settings --load-config-only
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-exec_always --no-startup-id picom -b -c --fade-in-step=1 --fade-out-step=1 --fade-delta=0 --config ~/.config/picom/picom.conf --backend xrender &
+exec_always --no-startup-id picom -b -c --fade-in-step=1 --fade-out-step=1 --fade-delta=0 --no-fading-openclose --config ~/.config/picom/picom.conf --backend xrender &
 exec_always --no-startup-id nitrogen --restore
 exec        --no-startup-id blueman-applet
 exec        --no-startup-id xfce4-power-manager
-exec        --no-startup-id xautolock -time 10 -locker "i3lock" 
+#exec        --no-startup-id xidlehook --timer 300 "betterlockscreen -l" ""
+exec        --no-startup-id xautolock -time 300 -locker "betterlockscreen -l" 
